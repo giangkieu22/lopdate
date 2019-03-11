@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+</head>
+<body>
+<canvas id="canvas" width="400" height="400"></canvas>
+<script>
+    var a = document.getElementById('canvas');
+    var p = a.getContext('2d');
+    // p.moveTo(0,0);
+    // p.beginPath();
+    // p.arc(100,100,80,0,2*Math.PI);
+    // p.stroke();
+    // p.font = '50px Arial';
+    // p.color = 'red';
+    // p.fillText('uouuouo',50,50);
+    var grd = p.createRadialGradient(60,220,20,180,500,50);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"blue");
+    p.fillStyle = grd;
+    p.fill();
+    // p.fillRect(20,20,200,100);
+</script>
+</body>
+</html>
