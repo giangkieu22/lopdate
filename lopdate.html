@@ -6,23 +6,25 @@
 </head>
 <body>
 <script>
-    let MyDate = function(day, month, year) {
+    let a = function(day, month, year) {
 
         this.day = day;
 
         this.month = month;
 
         this.year = year;
+
     };
-        this.getDay = function() {
-        return this.day;
-    }
-        this.getMonth = function() {
-        return this.month;
-    }
-        this.getYear = function() {
-        return this.year;
-    };
+    //     getDay = function() {
+    //     return this.day;
+    // };
+    //     getMonth = function() {
+    //     return this.month;
+    // };
+    //     getYear = function() {
+    //     return this.year;
+    // };
+
     // this.setDay = function(day) {
     //     this.day  = day;
     // }
@@ -32,13 +34,14 @@
     // this.setYear = function(year) {
     //     this.year  = year;
     // };
-        let date = new MyDate(2, 2, 2007);
-        let day = date.getDay // 2
-
-        let month = date.getMonth // 2
-
-        let year = date.getYear // 2007
-        alert(day + "/" + month + "/" + year);
+        let x = new a(2, 2, 2007);
+        // let day = date.getDay; // 2
+        //
+        // let month = date.getMonth; // 2
+        //
+        // let year = date.getYear; // 2007
+        // alert(day + "/" + month + "/" + year);
+    alert(x.day + "/" + x.month + "/" + x.year)
 </script>
 </body>
 </html>
