@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let a = function(day, month, year) {
+    let Date = function(day, month, year) {
 
         this.day = day;
 
@@ -14,32 +14,37 @@
 
         this.year = year;
 
-    };
-        getDay = function() {
-        return this.day;
-    };
-        getMonth = function() {
-        return this.month;
-    };
-        getYear = function() {
-        return this.year;
+        this.getDay = function() {
+            return this.day;
+        };
+        this.getMonth = function() {
+            return this.month;
+        };
+       this.getYear = function() {
+            return this.year;
+        };
+
+        this.setDay = function(day) {
+            this.day  = day;
+        }
+        this.setMonth = function(month) {
+            this.month  = month;
+        }
+        this.setYear = function(year) {
+            this.year  = year;
+        };
+
     };
 
-    this.setDay = function(day) {
-        this.day  = day;
-    }
-    this.setMonth = function(month) {
-        this.month  = month;
-    }
-    this.setYear = function(year) {
-        this.year  = year;
-    };
-    let x = new a();
-    let day = x.getDay;
 
-    let month = x.getMonth;
 
-    let year = x.getYear;
+    let x = new Date();
+    let day = x.getDay();
+
+    let month = x.getMonth();
+
+    let year = x.getYear();
+    // year()
 
     x.setDay(10);
     x.setMonth(10);
